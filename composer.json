@@ -75,7 +75,7 @@
 	"require-dev" : {
 		"codeception/codeception"      : "~4.2.2",
 		"codeception/module-asserts"   : "~2.0.1",
-		"codeception/module-phpbrowser": "~2.0.3",
+		"codeception/module-phpbrowser": "~2.5.0",
 		"codeception/module-rest"      : "~2.0.2",
 		"codeception/module-webdriver" : "~2.0.4",
 		"laminas/laminas-test"         : "~4.3.0",
