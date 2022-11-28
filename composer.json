@@ -1,0 +1,113 @@
+{
+	"name"        : "enkora/nexus",
+	"license"     : "proprietary",
+	"type"        : "project",
+	"description" : "Enkora Nexus system",
+	"repositories": [
+		{
+			"type": "git",
+			"url" : "https://github.com/Enkora/scssphp"
+		},
+		{
+			"type": "git",
+			"url" : "https://github.com/Enkora/coffeescript-php"
+		}
+	],
+	"config"      : {
+		"platform": {
+			"php": "7.4.20"
+		}
+	},
+	"require"     : {
+		"php"                                             : "^7.4",
+		"aidantwoods/secureheaders"                       : "~2.0.1",
+		"coffeescript/coffeescript"                       : "dev-php74fixes",
+		"consolidation/robo"                              : "~3.0.10",
+		"devio/pipedrive"                                 : "~2.13.0",
+		"erusev/parsedown"                                : "~1.7.4",
+		"ezyang/htmlpurifier"                             : "~4.16.0",
+		"google/cloud-storage"                            : "~1.29.0",
+		"guzzlehttp/guzzle"                               : "~7.5.0",
+		"instasent/sms-counter-php"                       : "~0.5.2",
+		"laminas/laminas-barcode"                         : "~2.11.0",
+		"laminas/laminas-cache"                           : "~3.6.0",
+		"laminas/laminas-cache-storage-adapter-blackhole" : "~2.0.0",
+		"laminas/laminas-cache-storage-adapter-filesystem": "~2.2.0",
+		"laminas/laminas-cache-storage-adapter-redis"     : "~2.3.0",
+		"laminas/laminas-db"                              : "~2.15.0",
+		"laminas/laminas-filter"                          : "~2.22.0",
+		"laminas/laminas-http"                            : "~2.16.0",
+		"laminas/laminas-loader"                          : "~2.8.0",
+		"laminas/laminas-log"                             : "~2.15.3",
+		"laminas/laminas-mail"                            : "~2.16.0",
+		"laminas/laminas-mvc"                             : "~3.3.5",
+		"laminas/laminas-permissions-acl"                 : "~2.10.0",
+		"laminas/laminas-serializer"                      : "~2.13.0",
+		"laminas/laminas-servicemanager"                  : "~3.17.0",
+		"laminas/laminas-soap"                            : "~2.10.0",
+		"lcobucci/jwt"                                    : "~4.2.1",
+		"leafo/scssphp"                                   : "dev-master",
+		"league/html-to-markdown"                         : "~5.1.0",
+		"malkusch/lock"                                   : "~2.2.1",
+		"marcusschwarz/lesserphp"                         : "~0.6.0",
+		"michelf/php-markdown"                            : "~2.0.0",
+		"mikehaertl/phpwkhtmltopdf"                       : "~2.5.0",
+		"mpdf/mpdf"                                       : "~8.1.2",
+		"nepda/youtrack-client"                           : "~1.8.4",
+		"nette/php-generator"                             : "~3.6.9",
+		"onelogin/php-saml"                               : "~4.1.0",
+		"phpdocumentor/reflection-docblock"               : "~5.3.0",
+		"phpoffice/phpspreadsheet"                        : "~1.25.2",
+		"phpseclib/mcrypt_compat"                         : "~1.0.14",
+		"phpseclib/phpseclib"                             : "~2.0.39",
+		"robmorgan/phinx"                                 : "~0.13.1",
+		"ronanguilloux/isocodes"                          : "~2.3.6",
+		"solinor/paymenthighwayio"                        : "~1.7.0",
+		"spatie/calendar-links"                           : "~1.8.0",
+		"symfony/config"                                  : "~5.4.11",
+		"symfony/finder"                                  : "~5.4.11",
+		"symfony/http-foundation"                         : "~5.4.15",
+		"symfony/mime"                                    : "~5.4.14",
+		"twig/twig"                                       : "~3.4.3",
+		"vlucas/valitron"                                 : "~1.4.11",
+		"voku/anti-xss"                                   : "~4.1.35"
+	},
+	"require-dev" : {
+		"codeception/codeception"      : "~4.2.2",
+		"codeception/module-asserts"   : "~2.0.1",
+		"codeception/module-phpbrowser": "~2.0.3",
+		"codeception/module-rest"      : "~2.0.2",
+		"codeception/module-webdriver" : "~2.0.4",
+		"laminas/laminas-test"         : "~4.3.0",
+		"phpunit/php-code-coverage"    : "~9.2.18",
+		"phpunit/php-text-template"    : "~2.0.4",
+		"phpunit/phpunit"              : "~9.5.26",
+		"roave/security-advisories"    : "dev-latest",
+		"brianium/paratest"            : "^6.6"
+	},
+	"autoload"    : {
+		"files": [
+			"32bit_fixes.php",
+			"method_shortcuts.php",
+			"../nexus_app/constants/constants.php",
+			"Helpers/_lib_common.php",
+			"Nexus/Service/Pipedrive/Resources/Webhooks.php"
+		],
+		"psr-4": {
+			"Calls\\Helpers\\"            : "../nexus_app/calls/helpers",
+			"Enkora\\"                    : "../lib/Enkora",
+			"Logic\\"                     : "../nexus_app/logic",
+			"Menu\\"                      : "../nexus_app/menu",
+			"Sst\\"                       : "../nexus_app/sst",
+			"Application\\Model\\Action\\": "../nexus_app/models/actions"
+		}
+	},
+	"autoload-dev": {
+		"files": [
+			"../tests/NexusTestingDataset.php"
+		]
+	},
+	"scripts"     : {
+		"post-autoload-dump": "Enkora\\Tools\\Version::createBuildInfoFileDuringComposerInstall"
+	}
+}
