@@ -32,7 +32,7 @@
 		"laminas/laminas-barcode"                         : "~2.11.0",
 		"laminas/laminas-cache"                           : "~3.6.0",
 		"laminas/laminas-cache-storage-adapter-blackhole" : "~2.0.0",
-		"laminas/laminas-cache-storage-adapter-filesystem": "~2.2.0",
+		"laminas/laminas-cache-storage-adapter-filesystem": "~2.3.0",
 		"laminas/laminas-cache-storage-adapter-redis"     : "~2.3.0",
 		"laminas/laminas-db"                              : "~2.15.0",
 		"laminas/laminas-filter"                          : "~2.22.0",
