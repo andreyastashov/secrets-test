@@ -35,7 +35,7 @@
 		"laminas/laminas-cache-storage-adapter-filesystem": "~2.2.0",
 		"laminas/laminas-cache-storage-adapter-redis"     : "~2.3.0",
 		"laminas/laminas-db"                              : "~2.15.0",
-		"laminas/laminas-filter"                          : "~2.22.0",
+		"laminas/laminas-filter"                          : "~2.30.0",
 		"laminas/laminas-http"                            : "~2.16.0",
 		"laminas/laminas-loader"                          : "~2.8.0",
 		"laminas/laminas-log"                             : "~2.15.3",
