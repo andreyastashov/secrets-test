@@ -23,7 +23,7 @@
 		"aidantwoods/secureheaders"                       : "~2.0.1",
 		"coffeescript/coffeescript"                       : "dev-php74fixes",
 		"consolidation/robo"                              : "~3.0.10",
-		"devio/pipedrive"                                 : "~2.13.0",
+		"devio/pipedrive"                                 : "~2.15.0",
 		"erusev/parsedown"                                : "~1.7.4",
 		"ezyang/htmlpurifier"                             : "~4.16.0",
 		"google/cloud-storage"                            : "~1.29.0",
